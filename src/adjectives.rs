@@ -1,3 +1,5 @@
+// NOTE: words should contain only ASCII letters.
+//       keep the word list in alphabetical order.
 pub const ADJECTIVES: &[&str] = &[
     "abnormal",
     "abusive",
@@ -84,6 +86,7 @@ mod test {
         }
     }
 
+    // A test to ensure that the list is in alphabetical order.
     #[test]
     fn test_order() {
         for idx in 0..(ADJECTIVES.len() - 1) {

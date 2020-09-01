@@ -1,3 +1,5 @@
+// NOTE: words should contain only ASCII letters.
+//       keep the word list in alphabetical order.
 pub const NOUNS: &[&str] = &[
     "band",
     "beachball",
@@ -75,6 +77,7 @@ mod test {
         }
     }
 
+    // A test to ensure that the list is in alphabetical order.
     #[test]
     fn test_order() {
         for idx in 0..(NOUNS.len() - 1) {
